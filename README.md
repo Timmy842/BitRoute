@@ -16,7 +16,16 @@
 
 ## 📦 Estructura del proyecto
 
-<pre lang="markdown"> ``` BitRoute/ ├── tcp_echo/ # Servidor y cliente TCP (echo server) ├── udp_echo/ # Servidor y cliente UDP ├── custom_protocol/ # Protocolo binario personalizado ├── http_server/ # Mini servidor HTTP ├── file_server/ # Servidor de archivos con autenticación ├── chat_server/ # Chat multiusuario en tiempo real └── README.md ``` </pre>
+```
+BitRoute/
+├── tcp_echo/         # Servidor y cliente TCP (echo server)
+├── udp_echo/         # Servidor y cliente UDP
+├── custom_protocol/  # Protocolo binario personalizado
+├── http_server/      # Mini servidor HTTP
+├── file_server/      # Servidor de archivos con autenticación
+├── chat_server/      # Chat multiusuario en tiempo real
+└── README.md
+```
 
 ---
 
@@ -48,10 +57,11 @@ Desde el directorio raíz:
 ```bash
 make              # Compila todos los módulos disponibles
 make tcp_echo     # Compila solo el módulo de echo TCP
+```
 
 ---
 
-📌 Requisitos
+## 📌 Requisitos
 GCC (gcc)
 
 Make (make)
@@ -62,10 +72,10 @@ Linux o WSL (Windows Subsystem for Linux)
 
 ---
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 Proyecto desarrollado con fines educativos por Carlos Garcia.
 
 ---
 
-⚠️ Licencia
+## ⚠️ Licencia
 Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
