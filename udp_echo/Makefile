@@ -1,14 +1,22 @@
-# Makefile
+# Nombre de los ejecutables
+CLIENT = client_udp
+SERVER = server_udp
+
+# Compilador y flags
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -O2
 
-all: server client
+# Reglas por defecto
+all: $(CLIENT) $(SERVER)
 
-server: server.c
-	$(CC) $(CFLAGS) -o server server_udp.c
+# Compilación del cliente
+$(CLIENT): client_udp.c
+	$(CC) $(CFLAGS) -o $(CLIENT) client_udp.c
 
-client: client.c
-	$(CC) $(CFLAGS) -o client client_udp.c
+# Compilación del servidor
+$(SERVER): server_udp.c
+	$(CC) $(CFLAGS) -o $(SERVER) server_udp.c
 
+# Limpiar archivos compilados
 clean:
-	rm -f server client
+	rm -f $(CLIENT) $(SERVER)
